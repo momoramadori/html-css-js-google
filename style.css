@@ -36,6 +36,7 @@ header {
 .header-right ul li:last-child {
     font-weight: bold;
 }
+
 .header-left ul li a:hover, .header-right ul li:not(:last-child) a:hover{
     text-decoration: underline;
 }
@@ -44,7 +45,7 @@ header {
     color: black;
 }
 
-.header-right ul li:last-child a:hover {
+.header-right ul li:last-child a:hover i {
     background-color: rgb(64, 134, 245);
     transition:  all 0.2s;
 }
@@ -53,6 +54,40 @@ header {
     background-color: rgb(54, 124, 235);;
     color: white;
     padding: 5px 10px;
+}
+
+.header-right li:nth-of-type(3) {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 30px;
+    right: -75px;
+    width: 300px;
+    height: 350px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    display: none;
+}
+
+
+.active {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.dropdown .img  {
+    display: flex;
+    justify-content: space-around;
+    width: 33%;
+}
+
+.img i {
+    margin: auto;
+    padding: 12px 0;
+    color: rgb(64, 134, 245);
 }
 
 .centered-box {
