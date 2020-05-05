@@ -45,7 +45,7 @@ header {
     color: black;
 }
 
-.header-right ul li:last-child a:hover i {
+.header-right ul li:last-child a:hover  {
     background-color: rgb(64, 134, 245);
     transition:  all 0.2s;
 }
@@ -68,9 +68,7 @@ header {
     height: 350px;
     border: 1px solid lightgrey;
     border-radius: 3px;
-    display: none;
 }
-
 
 .active {
     display: flex;
