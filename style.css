@@ -50,7 +50,7 @@ header {
 }
 
 .header-right ul li:last-child a {
-    background-color: blue;
+    background-color: rgb(54, 124, 235);;
     color: white;
     padding: 5px 10px;
 }
@@ -116,11 +116,63 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: rgb(243, 243, 243);
-    font-size: 14px;
     color: grey;
+    font-size: 14px;
 }
 
-.footer-middle, .footer-bottom {
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.footer-top li {
+    display: inline-block;
+    padding: 30px 0;
+}
+
+.footer-top-left li a, .footer-top-left li i {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.footer-top-left li i {
+    font-size: 24px;
+    color: rgb(54, 124, 235);
+}
+
+.footer-top-left li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-top-right li {
+    padding-right: 15px;
+    margin-top: 5px;
+}
+.footer-top-right li a {
+    padding:6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.footer-top-right li:first-child a {
+    color: rgb(54, 124, 235);
+}
+
+.footer-top-right li:last-child a {
+    background-color: rgb(54, 124, 235);
+    color: white;
+    border-radius: 2px;
+}
+
+.footer-top-right li:last-child a:hover {
+    background-color: rgb(64, 134, 245);
+    transition:  all 0.2s;
+}
+
+.footer-middle, .footer-bottom, .footer-top {
     border-top: 1px solid lightgrey;
 }
 
