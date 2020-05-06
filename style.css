@@ -71,6 +71,18 @@ header {
     display: none;
 }
 
+.dropdown .img:nth-child(4n+1) i {
+    color: red;
+}
+
+.dropdown .img:nth-child(4n+2) i {
+    color: green;
+}
+
+.dropdown .img:nth-child(4n+3) i {
+    color: orange;
+}
+
 .active {
     display: flex;
     flex-wrap: wrap;
@@ -79,8 +91,15 @@ header {
 
 .dropdown .img  {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     width: 33%;
+}
+
+.img {
+    text-align: center;
+    font-size: 12px;
+    width: 98px;
+    height: 86px;
 }
 
 .img i {
@@ -89,8 +108,12 @@ header {
     color: rgb(64, 134, 245);
 }
 
+.img:hover {
+    background-color: rgb(243, 243, 243);
+}
+
 main {
-    height: 70vh;
+    height: 80vh;
 }
 .centered-box {
     display: flex;
@@ -127,6 +150,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 .buttons li {
@@ -149,67 +173,78 @@ main {
 }
 
 footer {
-    height: 20vh;
+    height: 10vh;
     width: 100%;
     background-color: rgb(243, 243, 243);
     color: grey;
     font-size: 14px;
 }
 
-.footer-top {
-    height: 50%;
+.pop-up {
+    height: 100px;
     display: flex;
     justify-content: space-between;
     background-color: white;
 }
 
-.footer-top li {
+.read {
+    position: absolute;
+    transition: 2s;
+    bottom: -400px;
+    width: 100%;
+}
+
+.pop-up li {
     display: inline-block;
     padding: 20px 0;
 }
 
-.footer-top-left li a, .footer-top-left li i {
+.pop-up-left li a, .pop-up-left li i {
     padding-left: 15px;
     font-size: 20px;
 }
 
-.footer-top-left li i {
+.pop-up-left li i {
     font-size: 24px;
     color: rgb(54, 124, 235);
 }
 
-.footer-top-left li a {
+.pop-up-left li a {
     text-decoration: none;
     color: black;
 }
 
-.footer-top-right li {
+.pop-up-right li {
     padding-right: 15px;
     margin-top: 5px;
 }
-.footer-top-right li a {
+.pop-up-right li a {
     padding:6px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
 }
 
-.footer-top-right li:first-child a {
+.pop-up-right li:first-child a {
     color: rgb(54, 124, 235);
 }
 
-.footer-top-right li:last-child a {
+.pop-up-right li:last-child a {
     background-color: rgb(54, 124, 235);
     color: white;
     border-radius: 2px;
 }
 
-.footer-top-right li:last-child a:hover {
+.pop-up-right li:last-child a:hover {
     background-color: rgb(64, 134, 245);
     transition:  all 0.2s;
 }
 
-.footer-middle, .footer-bottom, .footer-top {
+footer {
+    z-index: 10;
+}
+
+.footer-middle, .footer-bottom, .pop-up {
     border-top: 1px solid lightgrey;
 }
 
