@@ -150,7 +150,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 180px;
 }
 
 .buttons li {
@@ -188,10 +188,7 @@ footer {
 }
 
 .read {
-    position: absolute;
-    transition: 2s;
-    bottom: -400px;
-    width: 100%;
+    display: none;
 }
 
 .pop-up li {
