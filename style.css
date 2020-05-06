@@ -7,7 +7,7 @@
 .container {
     width: 1280px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
+    height: 100vh;
 }
 
 header {
@@ -68,6 +68,7 @@ header {
     height: 350px;
     border: 1px solid lightgrey;
     border-radius: 3px;
+    display: none;
 }
 
 .active {
@@ -88,15 +89,18 @@ header {
     color: rgb(64, 134, 245);
 }
 
+main {
+    height: 70vh;
+}
 .centered-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
 }
 
 #google-logo {
+    margin-top: 60px;
     width: 20%;
     margin-bottom: 20px;
 }
@@ -145,8 +149,7 @@ header {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    height: 20vh;
     width: 100%;
     background-color: rgb(243, 243, 243);
     color: grey;
@@ -154,6 +157,7 @@ footer {
 }
 
 .footer-top {
+    height: 50%;
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -161,7 +165,7 @@ footer {
 
 .footer-top li {
     display: inline-block;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .footer-top-left li a, .footer-top-left li i {
